@@ -1,0 +1,13 @@
+Source,term,Risk Ontology
+STAMP,Accident,Loss Event
+STAMP,Factor,Vulnerability
+STAMP,causes,causes
+STAMP,contributes to, -
+STAMP,violates, -
+STAMP,Risk,Loss Event Type, Future Event Type
+STAMP,Hazard,Vulnerability Type
+STAMP,severity,Risk<<Quality>>
+STAMP,likelihood,Risk<<Quality>>
+safety,directly cause, directly causes
+safety,mitigates, -
+safety, occurrence, Loss Event

@@ -62,15 +62,15 @@ and
 \address[B]{Department of Air Transport, \orgname{Faculty of Transportation Sciences, Czech Technical University in Prague}, \cny{Czech Republic}\printead[presep={\\}]{e3}}
 
 \begin{abstract}
-In recent years, there is a growing interest in building safer systems that work in better ways than traditional safety systems. Regarding the daily changes in our community, technology and environment, the causes of accidents and the factors that contribute to these accidents are growing fast with the rapid pace of technological innovation. In fact, we are still searching for the most adequate concepts that would explain and predict safety, what is demonstrated by continuous progress in academia and industry research. Therefore, in this paper, we discuss the ontological foundations of hazards and its occurrences in safety system specifically in aviation safety domain according to the new accident model (STAMP). As a result, we propose a STAMP hazard risk ontology that could help in analyzing safety systems accidents and modeling control loop failures selected by STAMP according to this ontology. 
+In recent years, there is a growing interest in building safer systems that work in better ways than traditional safety systems. Regarding the daily changes in our community, technology and environment, the causes of accidents and the factors that contribute to these accidents are growing fast with the rapid pace of technological innovation. In fact, we are still searching for the most adequate concepts that would explain and predict safety, what is demonstrated by continuous progress in academia and industry research. In this paper, we contribute to the state-of-the-art by discussing the ontological foundations of hazards and risks. We consider their occurrences in safety systems, specifically in the domain of aviation safety, according to the new accident model STAMP. As a result, we propose a STAMP hazard risk ontology that could help in analyzing accidents and modeling control loop failures according to the theory of STAMP. 
 % establishing a common conceptualization regarding aviation safety domain in the new accident model (STAMP: System-Theoretic Accident Model and Processes)
 \end{abstract}
 
 \begin{keyword}
+\kwd{Aviation}
+\kwd{Ontology}
 \kwd{Safety}
 \kwd{STAMP}
-\kwd{Ontology}
-\kwd{Aviation}
 \end{keyword}
 
 \end{frontmatter}
@@ -82,22 +82,22 @@ In recent years, there is a growing interest in building safer systems that work
 With the advent of modern civilization there is a growing interest in building safer systems. High risk industries and sciences are pushing the boundaries of how to view safety and how to improve upon exiting solutions. Different safety models and safety analysis methods were proposed trough out the years~\cite{ECTL2009}. In this regard, we live an era of systemic causation models of safety that attempt to explain causality considering system level and not just its component failures, including phenomena such as emergence, complexity and component interaction accidents. This is especially important as safety has to be addressed typically in socio-technical systems, where the interplay of humans, machines and software matters~\cite{dekker2017}.
 
 % current safety models
-The two most recent systemic causation models of safety are STAMP (System-Theoretic Accident Model and Processes)~\cite{leveson2012engineering} and FRAM (Functional Resonance Analysis Method)~\cite{hollnagel2012fram}. Both methods model systems as compositions of components. STAMP models components as feedback control loops which allow describing objects in three main categories controllers, sensors and actuators (key parts of a feedback control loop). On the other hand, FRAM models components as functions avoiding descriptions of objects by design. 
+The two most recent systemic causation models of safety are STAMP (System-Theoretic Accident Model and Processes)~\cite{leveson2012engineering} and FRAM (Functional Resonance Analysis Method)~\cite{hollnagel2012fram}. Both model systems as compositions of components. STAMP models components as feedback control loops which allow describing objects in three main categories, namely controllers, sensors and actuators (key parts of a feedback control loop). On the other hand, FRAM models components as functions avoiding descriptions of objects by design. 
 
 % state of adoption of the safety models STAMP and FRAM
-Both STAMP and FRAM are being currently validated \cite{yaosong2012, Pereira2015, Underwood2016, Allison2017, Zhou2018, Patriarca2017add, FUKUDA2016,Patriarca2018}.
+Both STAMP and FRAM are still being validated by other research \cite{yaosong2012, Pereira2015, Underwood2016, Allison2017, Zhou2018, Patriarca2017add, FUKUDA2016,Patriarca2018}.
 %\TODO{add citation for STAMP}. - Resolved AL
-Such efforts are being adopted for ad-hoc analysis in practice. Recently, there have been proposed some software prototypes supporting modeling with STAMP~\cite{Abdulkhaleq2014a, Abdulkhaleq2015, Abdulkhaleq2016} and FRAM~\cite{Rees2016}. 
+These efforts are typically oriented to ad-hoc analyses in practice. Also, there have been proposed some software prototypes supporting modeling with STAMP~\cite{Abdulkhaleq2014a, Abdulkhaleq2015, Abdulkhaleq2016} and FRAM~\cite{Rees2016}. 
 
 % problems of modern safety models
 % \TODO{split next sentence into two or more. Add citations FRAM (currently only STAMP)} - Resloved AL
 Even though both theories are intelligible and clear when used in simple applications, this ceases to be true for real-industry applications. The analysis can get overly complex and the methodologies associated with STAMP and FRAM would require extensive data~\cite{Kim2016} so as some level of own interpretation and expertise~\cite{Hollnagel2008}. In those cases, it is necessary to bridge the gap between theory and application~\cite{Underwood2016}. 
 
-One of the key obstacles of adopting these models in the industry is the lack of their formalization. Using the same term for different concepts and using different terms for the same concept are some manifestations of this limitation. This paper is part of a collection of work on the formalization of modern theory of safety where we address the issues by ontological analysis and formalization. 
+One of the key obstacles of adopting these models in the industry is the lack of their formalization. Using the same term for different concepts so as different terms for the same concept are some manifestations of this limitation. This paper is part of a collection of work on the formalization of modern theory of safety where we address the issues by ontological analysis and formalization. 
 
 In this paper we focus on the theory of STAMP in the context of hazards and risks. This includes the STPA~\cite{leveson2012engineering} (System-Theoretic Process Analysis) methodology based on the STAMP model, that is intended for the use case of hazards analysis. 
 
-Our contribution includes two ontology modules: the STAMP Hazard and Risk Ontology (SHRO) presented in Section~\ref{sec:shro} and the STAMP Control Loop Hazard Profile (SCLHP) presented in Section~\ref{sec:sclhp}. SRHO describes the concepts Hazard and Risk as understood in traditional safety as well as in STAMP and it is aligned with a novel reference ontology - the Common Ontology of Value and Risk~\cite{unknown}. The SCLHP formalizes the common hazards associated with control loops proposed by the STAMP model. Additionally we validate the Common Ontology of Value and Risk with industry use-cases. We adopt the \sabio{} methodology (Systematic Approach for Building Ontology) \cite{DeAlmeidaFalbo2014} to develop the proposed ontology modules. 
+Our contribution includes two ontology modules: the STAMP Hazard and Risk Ontology (SHRO) presented in Section~\ref{sec:shro} and the STAMP Control Loop Hazard Profile (SCLHP) presented in Section~\ref{sec:sclhp}. SHRO describes the concepts Hazard and Risk as understood in traditional safety as well as in STAMP and it is aligned with a novel reference ontology - the Common Ontology of Value and Risk~\cite{unknown}. The SCLHP formalizes the common hazards associated with control loops proposed by the STAMP model. Additionally we validate the Common Ontology of Value and Risk with industry use-cases. We adopt the \sabio{} methodology (Systematic Approach for Building Ontology) \cite{DeAlmeidaFalbo2014} to develop the proposed ontology modules. 
 
 To validate our approach and results, we take the perspective of the aviation industry and its safety management. This work has been done in cooperation with Prague Airport and Czech Airlines Technics who trialled STAMP and STPA in their operations within a research project. This is an important part since industry perspective can directly assess the usability and applicability of the proposed solutions. Industry experts also directly participated in the research activities.
 
@@ -125,7 +125,7 @@ This section provides fundamentals for our research. It deals both with safety a
 
 \subsection{STAMP: Hazards and Risks}
 \label{sec:back:stamp}
-\CONSIDER{Accidents Loss, complex systems, e.g. components and emergent behavior. STAMP tries loss in a complex system with many components and emergent behavior. Explain key components of STAMP, Control to avoid Risk/Hazard in a complex system. What is a complex system (e.g., a system composed of other components/systems)? What is the control structure/hierarchy? Control loop as the model of component of the control hierarchy? Hazards/Risks common to a control loop system.}
+\TODO{BK: Write how STAMP context for Hazard and Risk.}
 
 These two concepts serve successfully for a couple of decades (since the invention of HAZOP methodology~\cite{kletz2001hazop}) the very core of industrial safety management and are often part of industry standards (e.g. in aviation see~\cite{ICAO2018}). The STPA methodology using the STAMP model builds upon the cornerstones of HAZOP and provides for some additional steps and guidance, in line with the perspective of feedback control theory~\cite{doyle2009feedback}. However, the above-mentioned shortcomings of STAMP hold for STPA as well, and current safety management using hazards and risks as in HAZOP has its clear limitations, most of the apparent being the inability to progress any further on the safety of current operations~\cite{dekker2017}.
 
@@ -422,6 +422,27 @@ $\forall\term{re}, \term{h}  ~  ~ \term{ismanifestedBy}(\term{re},\term{h})
 
 As can be seen from Fig.~\ref{fig:f2}, our ontology is mainly based on the Common Ontology of Value and Risk. It incorporates several terms that we explained before such as \term{Risk Event},\term{Threat Event}, \term{Object at risk}, \term{Threat Object} and \term{Risk enabler}. However, there are many differences that need to be explained. SHRO aims to describe how hazardous states by violating the \term{Safety Constraints} contribute to loss event in the safety domain regarding specific accident model - the STAMP. Common Ontology of Value and Risk lacks safety-related concepts such as \term{Hazards}, \term{Occurrence}, \term{STAMP Failures}, \term{violates}, \term{mitigates} and \term{Safety Constraints}. Moreover, risk value ontology aims to explain the relations between value and risk, and how the \term {Vulnerability} could be considered as a positive and negative value in the same time according to the object's role that we discussed early in this section \cite{unknown}. Since SHRO cares about safety issues, especially \term{STAMP Failures} or \term{Hazards}, it describes \term{Hazard} concept as unsafe concept. From our perspective, \term{Vulnerability} concept means that there are some weak points or features inhere in some object that are manifested by unwanted events. But hazard is a safety related concept that is manifested by \term{Occurrences} of \term{STAMP Failures} which are safety events.
 Moreover, SHRO defines \term{Safety Constraint} concept that refers to acceptable ways the safety system has to follow to achieve the mission goals. However, in this paper, we don't describe this concept in detail, we only need the term \term{Safety Constraint} to fully describe hazards because they violate the \term{Safety Constraints}, and this violation causes a risk event in safety systems.
+\section{Probabilistic Risk Assessment}
+\label{sec:future}
+In this section, we consider the \term{Risk} in the nature of future event, i.e. risk involving uncertainty about whether or not such a loss event will happen in the future. 
+
+Probabilistic risk analysis using event chains are used by the industry today to convey safety and risk information. In performing a probabilistic risk assessment (PRA), initiating events in the chain are usually assumed to be mutually exclusive. While this assumption simplifies the mathematics by combining probabilities of individual
+component failures and mutually exclusive events, it may not match reality.
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=\textwidth]{riskpr.jpg}
+\end{center}
+\caption{Risk Likelihood in STAMP. Adopted and updated  from~\cite{unknown}ِ}
+\label{fig:riskpr}
+\end{figure*} 
+In Figure~\ref{fig:riskpr}, we represent the likelihood of loss event and risk as a quality in term of UFO type \cite{CARVALHO20173, gagc2015toap}. In \cite{unknown}, they differentiate between a Triggering Likelihood, which inheres in a Situation Type and represents how likely a Situation Type will trigger an Event Type once a situation of this type becomes a fact, and a Causal Likelihood that inheres in an Event Type and represents how likely specific event e will cause another event type to occur. Risk as a quality should indicate two values in safety. First is severity that depends on the type of loss (e.g. if the loss event leads to death then the severity value is high but if it results in only small damages, the severity value is low etc.) and second is probability, combining probabilities of individual failures in event model chain.
+
+ Regarding STAMP \cite{leveson2012engineering}, probabilistic risk assessment (PRA) is not appropriate for systems controlled by software and by humans making cognitively complex decisions. There is no effective way to incorporate management and organizational factors, such as flaws in the safety culture, into PRA despite many well-intentioned efforts to do so. As a result, these critical factors in accidents are often omitted from risk assessment because analysts do not know how to obtain a “ failure ” probability, or alternatively, a number is pulled out of the air for convenience. If we knew enough to measure these types of design flaws, it would be better to fix them than to try to measure them. Another possibility for future progress is usually not considered, and so the conclusion in STAMP is that "Risk and safety may be best understood and communicated in ways other than probabilistic risk analysis"~\cite{leveson2012engineering}.
+ 
+ Nevertheless, STAMP does not reject probability value as a constituent of Risk in general. It only emphasizes that in complex systems this value is untraceable and for the purpose of achieving practical results of the Risk analysis, the value needs to be replaced by other variables, such as mitigation potential~\cite{Leveson2009}. In this paper, however, we aim to propose formalization of the base PRA approach and so adhere to the standard probability inclusion. In future work concerning the overall STAMP ontology, we will address the need for offsetting the issues related to Risk assessment in complex systems, which will be possible by extending the ontologial foundations provided in this work.
+
+
 \section{STAMP Control Loop Hazard Profile Ontology}
 \label{sec:sclhp}
 In this section we describe the SCLHP ontology.
